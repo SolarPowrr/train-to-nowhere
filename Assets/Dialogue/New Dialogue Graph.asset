@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6229221873132797530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 8, y: -136}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: -6229221873132797530}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: -3055961396306902603}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -6229221873132797530}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -189186846250545711}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: 3b37d5c21f834a62832d242d36227a4d
+  input: 0
+  speakerName: solar
+  inlineText: dude its me solar its my inline text
+  tags: []
+  speedMultiplier: 1
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
+--- !u!114 &-3055961396306902603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4587b57bac21cf64cbaf064f50c39d91, type: 3}
+  m_Name: Start
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.StartNode
+  graph: {fileID: 11400000}
+  position: {x: -264, y: -136}
+  ports:
+    keys:
+    - next
+    values:
+    - _fieldName: next
+      _node: {fileID: -3055961396306902603}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -6229221873132797530}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: c6f3cc3f8087453eb36cccc6751c8cc3
+  next: 0
+--- !u!114 &-189186846250545711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae4cc09a5cb9e9943ad322a974539695, type: 3}
+  m_Name: End
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.EndNode
+  graph: {fileID: 11400000}
+  position: {x: 328, y: 184}
+  ports:
+    keys:
+    - input
+    values:
+    - _fieldName: input
+      _node: {fileID: -189186846250545711}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: -6229221873132797530}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: 348d625b823b47a9bc06f1649b212d6c
+  input: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f90012bd11fdfd40be3de4be0762f2d, type: 3}
+  m_Name: New Dialogue Graph
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.DialogueGraph
+  nodes:
+  - {fileID: -3055961396306902603}
+  - {fileID: -6229221873132797530}
+  - {fileID: -189186846250545711}
+  graphId: 
