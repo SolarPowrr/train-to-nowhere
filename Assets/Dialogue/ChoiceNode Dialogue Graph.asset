@@ -125,14 +125,50 @@ MonoBehaviour:
   lockedChoiceDisplay: 1
   lockedSuffix: ' (Locked)'
   options:
-  - InlineText: Simple branch
+  - InlineText: option a! goople glib!
     LocalizationKey: 
     Tags: []
-    Conditions: []
-  - InlineText: Another branch
+    Conditions:
+    - scope: 0
+      key: choice_Node
+      op: 2
+      expectedValue:
+        Type: 3
+        IntValue: 0
+        FloatValue: 0
+        BoolValue: 0
+        StringValue: goople giiblke
+    - scope: 0
+      key: choice_Node
+      op: 1
+      expectedValue:
+        Type: 0
+        IntValue: 0
+        FloatValue: 0
+        BoolValue: 0
+        StringValue: 
+  - InlineText: 'option b !! belplebaple! '
     LocalizationKey: 
     Tags: []
-    Conditions: []
+    Conditions:
+    - scope: 0
+      key: choice_Node
+      op: 2
+      expectedValue:
+        Type: 3
+        IntValue: 0
+        FloatValue: 0
+        BoolValue: 0
+        StringValue: beeple babblke
+    - scope: 0
+      key: choice_Node
+      op: 1
+      expectedValue:
+        Type: 0
+        IntValue: 0
+        FloatValue: 0
+        BoolValue: 0
+        StringValue: 
   fallback: 0
 --- !u!114 &-7502898018614086805
 MonoBehaviour:
@@ -467,7 +503,7 @@ MonoBehaviour:
     IntValue: 0
     FloatValue: 0
     BoolValue: 0
-    StringValue: B
+    StringValue: beeple babblke
   next: 0
 --- !u!114 &11400000
 MonoBehaviour:
@@ -548,7 +584,7 @@ MonoBehaviour:
     IntValue: 0
     FloatValue: 0
     BoolValue: 0
-    StringValue: A
+    StringValue: goople giiblke
   next: 0
 --- !u!114 &6697584244402046139
 MonoBehaviour:

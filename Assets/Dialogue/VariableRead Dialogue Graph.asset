@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Start
   m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.StartNode
   graph: {fileID: 11400000}
-  position: {x: -328, y: -152}
+  position: {x: -552, y: -152}
   ports:
     keys:
     - next
@@ -24,7 +24,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: input
-        node: {fileID: -6013383260414371579}
+        node: {fileID: -3621242335398588259}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: Line
   m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.LineNode
   graph: {fileID: 11400000}
-  position: {x: 168, y: -152}
+  position: {x: 360, y: -152}
   ports:
     keys:
     - input
@@ -67,7 +67,10 @@ MonoBehaviour:
       _node: {fileID: -7001302649989662995}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: 8032484789653687208}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -96,7 +99,7 @@ MonoBehaviour:
   m_Name: Line
   m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.LineNode
   graph: {fileID: 11400000}
-  position: {x: -104, y: -152}
+  position: {x: 72, y: -152}
   ports:
     keys:
     - input
@@ -107,8 +110,11 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: next
-        node: {fileID: -7255447830339299162}
+      - fieldName: outputs 1
+        node: {fileID: -3621242335398588259}
+        reroutePoints: []
+      - fieldName: outputs 0
+        node: {fileID: -3621242335398588259}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -137,6 +143,139 @@ MonoBehaviour:
   autoAdvance: 0
   autoAdvanceDelay: 1.5
   next: 0
+--- !u!114 &-5813391184792253996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae4cc09a5cb9e9943ad322a974539695, type: 3}
+  m_Name: End
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.EndNode
+  graph: {fileID: 11400000}
+  position: {x: 392, y: -728}
+  ports:
+    keys:
+    - input
+    values:
+    - _fieldName: input
+      _node: {fileID: -5813391184792253996}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: 3103563916754902587}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: c0eabe01c22346b390fed8d1f0c7541a
+  input: 0
+--- !u!114 &-3621242335398588259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d457e1760c0beb549a7420101c6fa197, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.ChoiceNode
+  graph: {fileID: 11400000}
+  position: {x: -248, y: -168}
+  ports:
+    keys:
+    - input
+    - fallback
+    - outputs 0
+    - outputs 1
+    values:
+    - _fieldName: input
+      _node: {fileID: -3621242335398588259}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: -7255447830339299162}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: fallback
+      _node: {fileID: -3621242335398588259}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 3103563916754902587}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outputs 0
+      _node: {fileID: -3621242335398588259}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -6013383260414371579}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: outputs 1
+      _node: {fileID: -3621242335398588259}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -6013383260414371579}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+  nodeId: 9f3740a8384d4126aeffb1b4f3b204a8
+  input: 0
+  lockedChoiceDisplay: 0
+  lockedSuffix: ' (Locked)'
+  options:
+  - InlineText: beeple! choice b!
+    LocalizationKey: 
+    Tags: []
+    Conditions:
+    - scope: 0
+      key: choice_Node
+      op: 2
+      expectedValue:
+        Type: 3
+        IntValue: 0
+        FloatValue: 0
+        BoolValue: 0
+        StringValue: beeple babblke
+  - InlineText: gople! choice a!
+    LocalizationKey: 
+    Tags: []
+    Conditions:
+    - scope: 0
+      key: choice_Node
+      op: 2
+      expectedValue:
+        Type: 3
+        IntValue: 0
+        FloatValue: 0
+        BoolValue: 0
+        StringValue: goople giiblke
+  fallback: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,7 +293,64 @@ MonoBehaviour:
   - {fileID: -6013383260414371579}
   - {fileID: -7001302649989662995}
   - {fileID: 8032484789653687208}
+  - {fileID: -3621242335398588259}
+  - {fileID: 3103563916754902587}
+  - {fileID: -5813391184792253996}
   graphId: c5fc30afa43f4ea88fb89def65c717f1
+--- !u!114 &3103563916754902587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 72, y: -744}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: 3103563916754902587}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: fallback
+        node: {fileID: -3621242335398588259}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: 3103563916754902587}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -5813391184792253996}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: 23b817ebd9ea4697922467674a8223b0
+  input: 0
+  speakerName: Snog
+  inlineText: "You couldn't even access the options! \n"
+  tags: []
+  speedMultiplier: 1
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
 --- !u!114 &8032484789653687208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,7 +364,7 @@ MonoBehaviour:
   m_Name: End
   m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.EndNode
   graph: {fileID: 11400000}
-  position: {x: 440, y: -152}
+  position: {x: 632, y: -152}
   ports:
     keys:
     - input
@@ -177,7 +373,10 @@ MonoBehaviour:
       _node: {fileID: 8032484789653687208}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: next
+        node: {fileID: -7001302649989662995}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
