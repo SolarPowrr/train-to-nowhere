@@ -16,6 +16,10 @@ namespace SnogDialogue.Runtime
 
         public string key;
 
+        [TextArea(10, 6)]
+        public string StringValue;
+
+        [HideInInspector]
         public DialogueValue value;
 
         [Output]
@@ -28,6 +32,7 @@ namespace SnogDialogue.Runtime
             {
                 VariableStore store = GetTargetStore(runtime);
 
+                value = DialogueValue.FromString(StringValue);
                 store.Set(key, value);
             }
 

@@ -28,7 +28,7 @@ MonoBehaviour:
         node: {fileID: 6697584244402046139}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: next
@@ -46,7 +46,7 @@ MonoBehaviour:
   nodeId: 1393068cc4194ca8979d3721e9e55e36
   input: 0
   speakerName: Snog
-  inlineText: That was a different path.
+  inlineText: 'That was a different path. '
   tags: []
   speedMultiplier: 1
   eventKey: 
@@ -84,7 +84,7 @@ MonoBehaviour:
         node: {fileID: -7001302649989662995}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: fallback
@@ -162,7 +162,7 @@ MonoBehaviour:
         node: {fileID: -6592105609466306124}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: next
@@ -248,7 +248,7 @@ MonoBehaviour:
         node: {fileID: -6013383260414371579}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: next
@@ -302,7 +302,7 @@ MonoBehaviour:
         node: {fileID: -8536952701161071869}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: next
@@ -356,7 +356,7 @@ MonoBehaviour:
         node: {fileID: -7255447830339299162}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: next
@@ -409,7 +409,7 @@ MonoBehaviour:
         node: {fileID: -933667532057098990}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
   nodeId: 6c68f173636a47a68b206241361f6292
@@ -442,7 +442,7 @@ MonoBehaviour:
         node: {fileID: -7502898018614086805}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: next
@@ -461,6 +461,7 @@ MonoBehaviour:
   input: 0
   scope: 0
   key: choice_Node
+  StringValue: beeple babblke
   value:
     Type: 3
     IntValue: 0
@@ -522,7 +523,7 @@ MonoBehaviour:
         node: {fileID: -8937902121400634667}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: next
@@ -541,6 +542,7 @@ MonoBehaviour:
   input: 0
   scope: 0
   key: choice_Node
+  StringValue: goople giiblke
   value:
     Type: 3
     IntValue: 0
@@ -576,7 +578,7 @@ MonoBehaviour:
         node: {fileID: -8536952701161071869}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: next
@@ -629,7 +631,7 @@ MonoBehaviour:
         node: {fileID: 5171086593437363386}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
   nodeId: 6c68f173636a47a68b206241361f6292

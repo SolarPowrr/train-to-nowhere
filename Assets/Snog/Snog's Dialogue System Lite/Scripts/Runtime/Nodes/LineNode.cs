@@ -16,7 +16,7 @@ namespace SnogDialogue.Runtime
         [Header("Content")]
         public string speakerName;
 
-        [TextArea(2, 6)]
+        [TextArea(10, 6)]
         public string inlineText;
 
         public string[] tags;
