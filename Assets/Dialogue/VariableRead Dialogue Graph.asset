@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: Line
   m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.LineNode
   graph: {fileID: 11400000}
-  position: {x: 360, y: -152}
+  position: {x: 360, y: -120}
   ports:
     keys:
     - input
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: Line
   m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.LineNode
   graph: {fileID: 11400000}
-  position: {x: 72, y: -152}
+  position: {x: 88, y: -120}
   ports:
     keys:
     - input
