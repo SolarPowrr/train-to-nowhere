@@ -242,8 +242,7 @@ namespace Snog.InteractionSystem.Demo
         {
             if (!enableHeadBob || playerCamera == null) return;
 
-            bool isMovingOnGround = cc.isGrounded &&
-                                    new Vector2(velocity.x, velocity.z).magnitude > 0.5f;
+            bool isMovingOnGround = true;
 
             if (isMovingOnGround)
             {
