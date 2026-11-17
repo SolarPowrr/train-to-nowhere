@@ -782,7 +782,7 @@ MonoBehaviour:
   nodeId: 23b817ebd9ea4697922467674a8223b0
   input: 0
   speakerName: Lana
-  inlineText: Hello there, officier. Is everything alright? You look very pale.
+  inlineText: Hello there, officer. Is everything alright? You look very pale.
   tags: []
   speedMultiplier: 1
   eventKey: 
@@ -1829,7 +1829,7 @@ MonoBehaviour:
   nodeId: 1393068cc4194ca8979d3721e9e55e36
   input: 0
   speakerName: Lana
-  inlineText: 'Lana: Would you mind fetching me a drink? I think I need to sit for
+  inlineText: 'Would you mind fetching me a drink? I think I need to sit for
     a while...'
   tags: []
   speedMultiplier: 1

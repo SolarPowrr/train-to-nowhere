@@ -23,7 +23,7 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: outputs 2
+      - fieldName: outputs 0
         node: {fileID: -8756041147964681183}
         reroutePoints: []
       _direction: 0
@@ -106,8 +106,6 @@ MonoBehaviour:
     - input
     - fallback
     - outputs 0
-    - outputs 1
-    - outputs 2
     values:
     - _fieldName: input
       _node: {fileID: -8756041147964681183}
@@ -134,24 +132,6 @@ MonoBehaviour:
       _node: {fileID: -8756041147964681183}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: outputs 1
-      _node: {fileID: -8756041147964681183}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: outputs 2
-      _node: {fileID: -8756041147964681183}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: input
         node: {fileID: -9161946457070568017}
@@ -165,14 +145,6 @@ MonoBehaviour:
   lockedChoiceDisplay: 0
   lockedSuffix: ' (Locked)'
   options:
-  - InlineText: Actually, can you catch me up on what you know already?
-    LocalizationKey: 
-    Tags: []
-    Conditions: []
-  - InlineText: 'Doesn''t know: Actually, can you catch me up on what you know already?'
-    LocalizationKey: 
-    Tags: []
-    Conditions: []
   - InlineText: Thank you.
     LocalizationKey: 
     Tags: []
@@ -586,7 +558,7 @@ MonoBehaviour:
   input: 0
   speakerName: Maggie
   inlineText: That's good to hear.  Please forgive us about the accomodation issues,
-    I just presumed it best you not talk with any other passangers until the investigation
+    I just presumed it best you not talk with any other passengers until the investigation
     officially started.
   tags: []
   speedMultiplier: 1
@@ -965,7 +937,7 @@ MonoBehaviour:
     LocalizationKey: 
     Tags: []
     Conditions: []
-  - InlineText: Interrogate the passangers. Sonebody has to know something.
+  - InlineText: Interrogate the passengers. Somebody has to know something.
     LocalizationKey: 
     Tags: []
     Conditions: []
@@ -1129,8 +1101,8 @@ MonoBehaviour:
   nodeId: 1393068cc4194ca8979d3721e9e55e36
   input: 0
   speakerName: Maggie
-  inlineText: We briefly stopped the train to let you on last night, but it was early
-    hours of the morning, so you suggested to wait until the morning.
+  inlineText: We briefly stopped the train to let you on, but it was early hours
+    of the morning, so you suggested to wait.
   tags: []
   speedMultiplier: 1
   eventKey: 
@@ -1726,8 +1698,8 @@ MonoBehaviour:
   nodeId: 1393068cc4194ca8979d3721e9e55e36
   input: 0
   speakerName: Maggie
-  inlineText: We briefly stopped the train to let you on last night, but it was early
-    hours of the morning, so you suggested to wait until the morning.
+  inlineText: We briefly stopped the train to let you on, but it was early hours
+    of the morning, so you suggested to wait.
   tags: []
   speedMultiplier: 1
   eventKey: 
@@ -1781,8 +1753,9 @@ MonoBehaviour:
   nodeId: 1393068cc4194ca8979d3721e9e55e36
   input: 0
   speakerName: Maggie
-  inlineText: ' Lola was found yesterday evening. As soon as we called the police,
-    they asked us to lock all potential suspects away from the rest of the train.'
+  inlineText: Lola was found in the early hours of the morning. As soon as we called
+    the police, they asked us to lock all potential suspects away from the rest of
+    the train.
   tags: []
   speedMultiplier: 1
   eventKey: 
@@ -1836,8 +1809,8 @@ MonoBehaviour:
   nodeId: 1393068cc4194ca8979d3721e9e55e36
   input: 0
   speakerName: Maggie
-  inlineText: We briefly stopped the train to let you on last night, but it was early
-    hours of the morning, so you suggested to wait until the morning.
+  inlineText: We briefly stopped the train to let you on, but it was early hours
+    of the morning, so you suggested to wait.
   tags: []
   speedMultiplier: 1
   eventKey: 
@@ -2001,8 +1974,9 @@ MonoBehaviour:
   nodeId: 1393068cc4194ca8979d3721e9e55e36
   input: 0
   speakerName: Maggie
-  inlineText: So, Lola was found yesterday evening. As soon as we called the police,
-    they asked us to lock all potential suspects away from the rest of the train.
+  inlineText: So, Lola was found in the early hours of the morning. As soon as we
+    called the police, they asked us to lock all potential suspects away from the
+    rest of the train.
   tags: []
   speedMultiplier: 1
   eventKey: 
@@ -2165,8 +2139,8 @@ MonoBehaviour:
   nodeId: 1393068cc4194ca8979d3721e9e55e36
   input: 0
   speakerName: Maggie
-  inlineText: Um... We spoke briefly last night? I appreciate how fast they sent
-    someone out.
+  inlineText: Um... We spoke briefly in the early hours of the morning? I appreciate
+    how fast they sent someone out.
   tags: []
   speedMultiplier: 1
   eventKey: 
@@ -2220,8 +2194,9 @@ MonoBehaviour:
   nodeId: 1393068cc4194ca8979d3721e9e55e36
   input: 0
   speakerName: Maggie
-  inlineText: ' Lola was found yesterday evening. As soon as we called the police,
-    they asked us to lock all potential suspects away from the rest of the train.'
+  inlineText: ' Lola was found in the early hours of the morning. As soon as we called
+    the police, they asked us to lock all potential suspects away from the rest of
+    the train.'
   tags: []
   speedMultiplier: 1
   eventKey: 
@@ -2442,7 +2417,7 @@ MonoBehaviour:
   input: 0
   speakerName: Maggie
   inlineText: What are you going to do first? Attend to the body, or investigate
-    the passangers?
+    the passengers?
   tags: []
   speedMultiplier: 1
   eventKey: 

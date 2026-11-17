@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: Line
   m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.LineNode
   graph: {fileID: 11400000}
-  position: {x: 1832, y: 776}
+  position: {x: 1560, y: 472}
   ports:
     keys:
     - input
@@ -181,7 +181,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: next
-        node: {fileID: -6709552940850219868}
+        node: {fileID: -4121934000091746108}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -193,7 +193,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: input
-        node: {fileID: -6830204624437283975}
+        node: {fileID: -6709552940850219868}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -377,7 +377,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: next
-        node: {fileID: -7646786090016745026}
+        node: {fileID: -6709552940850219868}
         reroutePoints: []
       - fieldName: next
         node: {fileID: 3330194814820698920}
@@ -401,7 +401,7 @@ MonoBehaviour:
   nodeId: 23b817ebd9ea4697922467674a8223b0
   input: 0
   speakerName: Mark
-  inlineText: Is there anything I can help you with?
+  inlineText: Is there anything else I can help you with?
   tags: []
   speedMultiplier: 1
   eventKey: 
@@ -422,7 +422,7 @@ MonoBehaviour:
   m_Name: Set Variable
   m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.SetVariableNode
   graph: {fileID: 11400000}
-  position: {x: 1560, y: 776}
+  position: {x: 1768, y: 1112}
   ports:
     keys:
     - input
@@ -434,10 +434,10 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: next
-        node: {fileID: -4121934000091746108}
+        node: {fileID: 2997911867049703942}
         reroutePoints: []
       - fieldName: next
-        node: {fileID: 2997911867049703942}
+        node: {fileID: -7646786090016745026}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -449,7 +449,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: input
-        node: {fileID: -7646786090016745026}
+        node: {fileID: -6830204624437283975}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -490,7 +490,10 @@ MonoBehaviour:
       _node: {fileID: -6499829910205565908}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: next
+        node: {fileID: -777599418577984142}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -499,7 +502,10 @@ MonoBehaviour:
       _node: {fileID: -6499829910205565908}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: 3025443445825824453}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -507,8 +513,8 @@ MonoBehaviour:
   nodeId: 23b817ebd9ea4697922467674a8223b0
   input: 0
   speakerName: Mark
-  inlineText: She did always seems preoccupied, though. I don't know if that was
-    because of her work, or something else.
+  inlineText: She did always seem preoccupied, though. I don't know if that was because
+    of her work, or something else.
   tags: []
   speedMultiplier: 1
   eventKey: 
@@ -608,7 +614,10 @@ MonoBehaviour:
       _node: {fileID: -4840389868540898032}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: -777599418577984142}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -616,7 +625,7 @@ MonoBehaviour:
   nodeId: 23b817ebd9ea4697922467674a8223b0
   input: 0
   speakerName: Mark
-  inlineText: Not much, I'm afriad. I barely knew the girl. Saw her face around the
+  inlineText: Not much, I'm afraid. I barely knew the girl. Saw her face around the
     train from time to time.
   tags: []
   speedMultiplier: 1
@@ -702,7 +711,10 @@ MonoBehaviour:
       _node: {fileID: -4121934000091746108}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: next
+        node: {fileID: 3308434729903549658}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -713,7 +725,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: input
-        node: {fileID: -6709552940850219868}
+        node: {fileID: -7646786090016745026}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -755,7 +767,10 @@ MonoBehaviour:
       _node: {fileID: -2998614141338646980}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: next
+        node: {fileID: 1055923728637715889}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -839,7 +854,10 @@ MonoBehaviour:
       _node: {fileID: -777599418577984142}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: next
+        node: {fileID: -4840389868540898032}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -848,7 +866,10 @@ MonoBehaviour:
       _node: {fileID: -777599418577984142}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: -6499829910205565908}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -1040,7 +1061,10 @@ MonoBehaviour:
       _node: {fileID: 1015625859555110570}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: next
+        node: {fileID: 3175496249258314776}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -1049,7 +1073,10 @@ MonoBehaviour:
       _node: {fileID: 1015625859555110570}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: 2997911867049703942}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -1102,7 +1129,10 @@ MonoBehaviour:
       _node: {fileID: 1055923728637715889}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: -2998614141338646980}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -1142,7 +1172,10 @@ MonoBehaviour:
       _node: {fileID: 2997911867049703942}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: next
+        node: {fileID: 1015625859555110570}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -1162,8 +1195,7 @@ MonoBehaviour:
   nodeId: 23b817ebd9ea4697922467674a8223b0
   input: 0
   speakerName: Mark
-  inlineText: Oh, and I'm Mark, by the way. Mark Brown.Oh, and I'm Mark, by the way.
-    Mark Brown.
+  inlineText: Oh, and I'm Mark, by the way. Mark Brown.
   tags: []
   speedMultiplier: 1
   eventKey: 
@@ -1194,7 +1226,10 @@ MonoBehaviour:
       _node: {fileID: 3025443445825824453}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: next
+        node: {fileID: -6499829910205565908}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -1214,7 +1249,7 @@ MonoBehaviour:
   nodeId: 23b817ebd9ea4697922467674a8223b0
   input: 0
   speakerName: Mark
-  inlineText: I wish I had more to tell you, detective, really. But I'm afriad that's
+  inlineText: I wish I had more to tell you, detective, really. But I'm afraid that's
     all I've got.
   tags: []
   speedMultiplier: 1
@@ -1258,7 +1293,10 @@ MonoBehaviour:
       _node: {fileID: 3157012306299779106}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: 3308434729903549658}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -1310,7 +1348,10 @@ MonoBehaviour:
       _node: {fileID: 3175496249258314776}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: 1015625859555110570}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -1349,7 +1390,10 @@ MonoBehaviour:
       _node: {fileID: 3308434729903549658}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: next
+        node: {fileID: 3157012306299779106}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -1358,7 +1402,10 @@ MonoBehaviour:
       _node: {fileID: 3308434729903549658}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: input
+        node: {fileID: -4121934000091746108}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0

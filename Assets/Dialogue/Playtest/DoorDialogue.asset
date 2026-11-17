@@ -1,0 +1,673 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8536952701161071869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d457e1760c0beb549a7420101c6fa197, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.ChoiceNode
+  graph: {fileID: 11400000}
+  position: {x: 72, y: 264}
+  ports:
+    keys:
+    - input
+    - fallback
+    - outputs 0
+    - outputs 1
+    values:
+    - _fieldName: input
+      _node: {fileID: -8536952701161071869}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: -7381416827089309080}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: fallback
+      _node: {fileID: -8536952701161071869}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outputs 0
+      _node: {fileID: -8536952701161071869}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -1585863191256191922}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: outputs 1
+      _node: {fileID: -8536952701161071869}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -5435686496864482282}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+  nodeId: 5ee9f954b6144c66847dc210023323de
+  input: 0
+  lockedChoiceDisplay: 0
+  lockedSuffix: ' (Locked)'
+  options:
+  - InlineText: It was pretty fun!
+    LocalizationKey: 
+    Tags: []
+    Conditions:
+    - scope: 0
+      key: Ch1HarryDialogue1Smug
+      op: 1
+      expectedValue:
+        Type: 0
+        IntValue: 0
+        FloatValue: 0
+        BoolValue: 0
+        StringValue: 
+  - InlineText: It was the worst thing I have ever played.
+    LocalizationKey: 
+    Tags: []
+    Conditions:
+    - scope: 0
+      key: Ch1HarryDialogue1Power
+      op: 1
+      expectedValue:
+        Type: 0
+        IntValue: 0
+        FloatValue: 0
+        BoolValue: 0
+        StringValue: 
+  fallback: 0
+--- !u!114 &-7381416827089309080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: -200, y: 152}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: -7381416827089309080}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: -6013383260414371579}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -7381416827089309080}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -8536952701161071869}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: 23b817ebd9ea4697922467674a8223b0
+  input: 0
+  speakerName: Train Door
+  inlineText: Did you enjoy the playtest?
+  tags: []
+  speedMultiplier: 1
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
+--- !u!114 &-7255447830339299162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4587b57bac21cf64cbaf064f50c39d91, type: 3}
+  m_Name: Start
+  m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.StartNode
+  graph: {fileID: 11400000}
+  position: {x: -840, y: 152}
+  ports:
+    keys:
+    - next
+    values:
+    - _fieldName: next
+      _node: {fileID: -7255447830339299162}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -6013383260414371579}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: d161ff40ec404680bc8a595a28a34367
+  next: 0
+--- !u!114 &-6013383260414371579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: -504, y: 152}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: -6013383260414371579}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: -7255447830339299162}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -6013383260414371579}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -7381416827089309080}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: 23b817ebd9ea4697922467674a8223b0
+  input: 0
+  speakerName: Train Door
+  inlineText: Sorry, you've reached the end of the playtest.
+  tags: []
+  speedMultiplier: 1
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
+--- !u!114 &-5435686496864482282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 408, y: 552}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: -5435686496864482282}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: outputs 1
+        node: {fileID: -8536952701161071869}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -5435686496864482282}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 6093794459879667696}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: 23b817ebd9ea4697922467674a8223b0
+  input: 0
+  speakerName: Train Door
+  inlineText: I'm sorry, I know it wasn't the most polished thing ever.
+  tags: []
+  speedMultiplier: 1
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
+--- !u!114 &-1617588192336331940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 728, y: -8}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: -1617588192336331940}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: -1585863191256191922}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -1617588192336331940}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 7006262783009813156}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: 23b817ebd9ea4697922467674a8223b0
+  input: 0
+  speakerName: Train Door
+  inlineText: I've got lots of stuff lined up, so hopefully we can playtest everything
+    again in semester 2.
+  tags: []
+  speedMultiplier: 1
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
+--- !u!114 &-1585863191256191922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 408, y: -8}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: -1585863191256191922}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: outputs 0
+        node: {fileID: -8536952701161071869}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -1585863191256191922}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -1617588192336331940}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: 23b817ebd9ea4697922467674a8223b0
+  input: 0
+  speakerName: Train Door
+  inlineText: I'm glad you enjoyed it!
+  tags: []
+  speedMultiplier: 1
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
+--- !u!114 &-311932525203651902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae4cc09a5cb9e9943ad322a974539695, type: 3}
+  m_Name: End
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.EndNode
+  graph: {fileID: 11400000}
+  position: {x: 1640, y: 280}
+  ports:
+    keys:
+    - input
+    values:
+    - _fieldName: input
+      _node: {fileID: -311932525203651902}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: outputs 0
+        node: {fileID: 4344187825012597723}
+        reroutePoints: []
+      - fieldName: outputs 1
+        node: {fileID: 4344187825012597723}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: b6479ebabb084ec19d30613f5916f6bb
+  input: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f90012bd11fdfd40be3de4be0762f2d, type: 3}
+  m_Name: DoorDialogue
+  m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.DialogueGraph
+  nodes:
+  - {fileID: -7255447830339299162}
+  - {fileID: -6013383260414371579}
+  - {fileID: -8536952701161071869}
+  - {fileID: -7381416827089309080}
+  - {fileID: -1585863191256191922}
+  - {fileID: -5435686496864482282}
+  - {fileID: 6093794459879667696}
+  - {fileID: -1617588192336331940}
+  - {fileID: 4344187825012597723}
+  - {fileID: 7006262783009813156}
+  - {fileID: -311932525203651902}
+  graphId: c5fc30afa43f4ea88fb89def65c717f1
+--- !u!114 &4344187825012597723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d457e1760c0beb549a7420101c6fa197, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.ChoiceNode
+  graph: {fileID: 11400000}
+  position: {x: 1320, y: 264}
+  ports:
+    keys:
+    - input
+    - fallback
+    - outputs 0
+    - outputs 1
+    values:
+    - _fieldName: input
+      _node: {fileID: 4344187825012597723}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: 7006262783009813156}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: fallback
+      _node: {fileID: 4344187825012597723}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outputs 0
+      _node: {fileID: 4344187825012597723}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -311932525203651902}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: outputs 1
+      _node: {fileID: 4344187825012597723}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -311932525203651902}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+  nodeId: 5ee9f954b6144c66847dc210023323de
+  input: 0
+  lockedChoiceDisplay: 0
+  lockedSuffix: ' (Locked)'
+  options:
+  - InlineText: You're the most welcome, Train Door.
+    LocalizationKey: 
+    Tags: []
+    Conditions:
+    - scope: 0
+      key: Ch1HarryDialogue1Smug
+      op: 1
+      expectedValue:
+        Type: 0
+        IntValue: 0
+        FloatValue: 0
+        BoolValue: 0
+        StringValue: 
+  - InlineText: I love you, Train door.
+    LocalizationKey: 
+    Tags: []
+    Conditions:
+    - scope: 0
+      key: Ch1HarryDialogue1Power
+      op: 1
+      expectedValue:
+        Type: 0
+        IntValue: 0
+        FloatValue: 0
+        BoolValue: 0
+        StringValue: 
+  fallback: 0
+--- !u!114 &6093794459879667696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 728, y: 552}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: 6093794459879667696}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: -5435686496864482282}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: 6093794459879667696}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 7006262783009813156}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: 23b817ebd9ea4697922467674a8223b0
+  input: 0
+  speakerName: Train Door
+  inlineText: I really would've liked to have added more dialogue. I've got lots
+    planned, but this playtest definitely fell short.
+  tags: []
+  speedMultiplier: 1
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
+--- !u!114 &7006262783009813156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 1032, y: 264}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: 7006262783009813156}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: -1617588192336331940}
+        reroutePoints: []
+      - fieldName: next
+        node: {fileID: 6093794459879667696}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: 7006262783009813156}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 4344187825012597723}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: 23b817ebd9ea4697922467674a8223b0
+  input: 0
+  speakerName: Train Door
+  inlineText: But anyways, thank you for playing my game!
+  tags: []
+  speedMultiplier: 1
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0

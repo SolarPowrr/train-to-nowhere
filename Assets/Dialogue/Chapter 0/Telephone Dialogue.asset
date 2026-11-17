@@ -1,0 +1,357 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8693474325630220535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 712, y: 152}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: -8693474325630220535}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: 6508708991808748463}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -8693474325630220535}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -7312230551990688425}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: 23b817ebd9ea4697922467674a8223b0
+  input: 0
+  speakerName: Telephone
+  inlineText: 'Notes: Suspects have been held within the train.'
+  tags: []
+  speedMultiplier: 0.7
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.1
+  next: 0
+--- !u!114 &-7312230551990688425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae4cc09a5cb9e9943ad322a974539695, type: 3}
+  m_Name: End
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.EndNode
+  graph: {fileID: 11400000}
+  position: {x: 1032, y: 232}
+  ports:
+    keys:
+    - input
+    values:
+    - _fieldName: input
+      _node: {fileID: -7312230551990688425}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: -8693474325630220535}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: 7e38ed310e5f42f28e77930997bea35e
+  input: 0
+--- !u!114 &-7255447830339299162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4587b57bac21cf64cbaf064f50c39d91, type: 3}
+  m_Name: Start
+  m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.StartNode
+  graph: {fileID: 11400000}
+  position: {x: -840, y: 152}
+  ports:
+    keys:
+    - next
+    values:
+    - _fieldName: next
+      _node: {fileID: -7255447830339299162}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 4264959488897711574}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: d161ff40ec404680bc8a595a28a34367
+  next: 0
+--- !u!114 &-6013383260414371579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: -280, y: 152}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: -6013383260414371579}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: 4264959488897711574}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -6013383260414371579}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -189379535114844256}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: 23b817ebd9ea4697922467674a8223b0
+  input: 0
+  speakerName: Telephone
+  inlineText: 'Name of Victim: Lola Arrole'
+  tags: []
+  speedMultiplier: 0.9
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.4
+  next: 0
+--- !u!114 &-189379535114844256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 40, y: 152}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: -189379535114844256}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: -6013383260414371579}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -189379535114844256}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 6508708991808748463}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: 23b817ebd9ea4697922467674a8223b0
+  input: 0
+  speakerName: Telephone
+  inlineText: 'Estimated time of death: 3:20AM'
+  tags: []
+  speedMultiplier: 0.8
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.3
+  next: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f90012bd11fdfd40be3de4be0762f2d, type: 3}
+  m_Name: Telephone Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.DialogueGraph
+  nodes:
+  - {fileID: -7255447830339299162}
+  - {fileID: -6013383260414371579}
+  - {fileID: -189379535114844256}
+  - {fileID: 4264959488897711574}
+  - {fileID: 6508708991808748463}
+  - {fileID: -8693474325630220535}
+  - {fileID: -7312230551990688425}
+  graphId: c5fc30afa43f4ea88fb89def65c717f1
+--- !u!114 &4264959488897711574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: -616, y: 152}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: 4264959488897711574}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: -7255447830339299162}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: 4264959488897711574}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -6013383260414371579}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: 23b817ebd9ea4697922467674a8223b0
+  input: 0
+  speakerName: Telephone
+  inlineText: 'Time of report: 3:42AM'
+  tags: []
+  speedMultiplier: 1
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
+--- !u!114 &6508708991808748463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 376, y: 152}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: 6508708991808748463}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: -189379535114844256}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: 6508708991808748463}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -8693474325630220535}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: 23b817ebd9ea4697922467674a8223b0
+  input: 0
+  speakerName: Telephone
+  inlineText: 'Location: The Newmarket Express'
+  tags: []
+  speedMultiplier: 0.75
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.2
+  next: 0

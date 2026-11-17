@@ -1,0 +1,1511 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8263578500462253704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 1688, y: -168}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: -8263578500462253704}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: -1681512877613300113}
+        reroutePoints: []
+      - fieldName: next
+        node: {fileID: -3934442057596469354}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -8263578500462253704}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -3198987252613333959}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: c6a03ab7a88345a28a5c295eada6be73
+  input: 0
+  speakerName: ???
+  inlineText: It's really scary.
+  tags: []
+  speedMultiplier: 1
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
+--- !u!114 &-7970861258273103891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 104, y: -200}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: -7970861258273103891}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: 8555235697981006176}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -7970861258273103891}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -234938423433346777}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: 69a4f86d7f7b459192ba50be15ab56ce
+  input: 0
+  speakerName: ???
+  inlineText: Hello?
+  tags: []
+  speedMultiplier: 0.7
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
+--- !u!114 &-7630307889139623699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d457e1760c0beb549a7420101c6fa197, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.ChoiceNode
+  graph: {fileID: 11400000}
+  position: {x: 4968, y: -8}
+  ports:
+    keys:
+    - input
+    - fallback
+    - outputs 0
+    - outputs 1
+    values:
+    - _fieldName: input
+      _node: {fileID: -7630307889139623699}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: -2329062088957414458}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: fallback
+      _node: {fileID: -7630307889139623699}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outputs 0
+      _node: {fileID: -7630307889139623699}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 5023875919407581027}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: outputs 1
+      _node: {fileID: -7630307889139623699}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 5023875919407581027}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+  nodeId: 37dc4e35f6d240ccba251bb4aec6455e
+  input: 0
+  lockedChoiceDisplay: 0
+  lockedSuffix: ' (Locked)'
+  options:
+  - InlineText: How can I find you if I don't know where I am?
+    LocalizationKey: 
+    Tags: []
+    Conditions: []
+  - InlineText: I'll find you. We'll talk again.
+    LocalizationKey: 
+    Tags: []
+    Conditions: []
+  fallback: 0
+--- !u!114 &-6077536407371840617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d457e1760c0beb549a7420101c6fa197, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.ChoiceNode
+  graph: {fileID: 11400000}
+  position: {x: 3000, y: -40}
+  ports:
+    keys:
+    - input
+    - fallback
+    - outputs 0
+    - outputs 1
+    values:
+    - _fieldName: input
+      _node: {fileID: -6077536407371840617}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: -4029218276174928057}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: fallback
+      _node: {fileID: -6077536407371840617}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outputs 0
+      _node: {fileID: -6077536407371840617}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 7644308207537355508}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: outputs 1
+      _node: {fileID: -6077536407371840617}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 6988395264100543284}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+  nodeId: 37dc4e35f6d240ccba251bb4aec6455e
+  input: 0
+  lockedChoiceDisplay: 0
+  lockedSuffix: ' (Locked)'
+  options:
+  - InlineText: I'm not even really sure where I am.
+    LocalizationKey: 
+    Tags: []
+    Conditions: []
+  - InlineText: You're on the train, like me.
+    LocalizationKey: 
+    Tags: []
+    Conditions: []
+  fallback: 0
+--- !u!114 &-5551094817638925887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c5d3a2b9f44be942960d0ee6d0bfc09, type: 3}
+  m_Name: Set Variable
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.SetVariableNode
+  graph: {fileID: 11400000}
+  position: {x: 5576, y: -8}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: -5551094817638925887}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: 5023875919407581027}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -5551094817638925887}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -3777303317306532074}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: 1268a6b2064e4087840b32af1d49ac1f
+  input: 0
+  scope: 0
+  key: 
+  StringValue: 
+  value:
+    Type: 0
+    IntValue: 0
+    FloatValue: 0
+    BoolValue: 0
+    StringValue: 
+  next: 0
+--- !u!114 &-5292787717573830521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 4008, y: -152}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: -5292787717573830521}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: outputs 0
+        node: {fileID: 8187605616143210590}
+        reroutePoints: []
+      - fieldName: outputs 1
+        node: {fileID: 8187605616143210590}
+        reroutePoints: []
+      - fieldName: outputs 0
+        node: {fileID: 8187605616143210590}
+        reroutePoints: []
+      - fieldName: outputs 1
+        node: {fileID: 8187605616143210590}
+        reroutePoints: []
+      - fieldName: outputs 2
+        node: {fileID: 8187605616143210590}
+        reroutePoints: []
+      - fieldName: outputs 3
+        node: {fileID: 8187605616143210590}
+        reroutePoints: []
+      - fieldName: outputs 4
+        node: {fileID: 8187605616143210590}
+        reroutePoints: []
+      - fieldName: outputs 5
+        node: {fileID: 8187605616143210590}
+        reroutePoints: []
+      - fieldName: outputs 6
+        node: {fileID: 8187605616143210590}
+        reroutePoints: []
+      - fieldName: outputs 7
+        node: {fileID: 8187605616143210590}
+        reroutePoints: []
+      - fieldName: outputs 8
+        node: {fileID: 8187605616143210590}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -5292787717573830521}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 1759997182008678465}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: c6a03ab7a88345a28a5c295eada6be73
+  input: 0
+  speakerName: ???
+  inlineText: When you talk like that, for a moment, I believe everything is going
+    to be okay.
+  tags: []
+  speedMultiplier: 0.85
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
+--- !u!114 &-5275114284436437617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d457e1760c0beb549a7420101c6fa197, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.ChoiceNode
+  graph: {fileID: 11400000}
+  position: {x: 1032, y: 24}
+  ports:
+    keys:
+    - input
+    - fallback
+    - outputs 0
+    - outputs 1
+    values:
+    - _fieldName: input
+      _node: {fileID: -5275114284436437617}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: 4086366479284407242}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: fallback
+      _node: {fileID: -5275114284436437617}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outputs 0
+      _node: {fileID: -5275114284436437617}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -1681512877613300113}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: outputs 1
+      _node: {fileID: -5275114284436437617}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -3934442057596469354}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+  nodeId: 37dc4e35f6d240ccba251bb4aec6455e
+  input: 0
+  lockedChoiceDisplay: 0
+  lockedSuffix: ' (Locked)'
+  options:
+  - InlineText: Who is this?
+    LocalizationKey: 
+    Tags: []
+    Conditions: []
+  - InlineText: Yes, I'm here.
+    LocalizationKey: 
+    Tags: []
+    Conditions: []
+  fallback: 0
+--- !u!114 &-4029218276174928057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 2648, y: -152}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: -4029218276174928057}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: 7445565547859717136}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -4029218276174928057}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -6077536407371840617}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: c6a03ab7a88345a28a5c295eada6be73
+  input: 0
+  speakerName: ???
+  inlineText: Do you know where I am?
+  tags: []
+  speedMultiplier: 1
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
+--- !u!114 &-3934442057596469354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 1368, y: 200}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: -3934442057596469354}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: outputs 1
+        node: {fileID: -5275114284436437617}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -3934442057596469354}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -8263578500462253704}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: c6a03ab7a88345a28a5c295eada6be73
+  input: 0
+  speakerName: ???
+  inlineText: Good, I'm glad. It's nice to hear your voice.
+  tags: []
+  speedMultiplier: 0.85
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
+--- !u!114 &-3777303317306532074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae4cc09a5cb9e9943ad322a974539695, type: 3}
+  m_Name: End
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.EndNode
+  graph: {fileID: 11400000}
+  position: {x: 5865.7666, y: 246.9902}
+  ports:
+    keys:
+    - input
+    values:
+    - _fieldName: input
+      _node: {fileID: -3777303317306532074}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: -5551094817638925887}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: 6e41511fed1d4e6faaa3b61c09ec8aa1
+  input: 0
+--- !u!114 &-3198987252613333959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d457e1760c0beb549a7420101c6fa197, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.ChoiceNode
+  graph: {fileID: 11400000}
+  position: {x: 1992, y: 8}
+  ports:
+    keys:
+    - input
+    - fallback
+    - outputs 0
+    - outputs 1
+    values:
+    - _fieldName: input
+      _node: {fileID: -3198987252613333959}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: -8263578500462253704}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: fallback
+      _node: {fileID: -3198987252613333959}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outputs 0
+      _node: {fileID: -3198987252613333959}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 7445565547859717136}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: outputs 1
+      _node: {fileID: -3198987252613333959}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 7445565547859717136}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+  nodeId: 37dc4e35f6d240ccba251bb4aec6455e
+  input: 0
+  lockedChoiceDisplay: 0
+  lockedSuffix: ' (Locked)'
+  options:
+  - InlineText: What's scary? I don't understand.
+    LocalizationKey: 
+    Tags: []
+    Conditions: []
+  - InlineText: I can imagine.
+    LocalizationKey: 
+    Tags: []
+    Conditions: []
+  fallback: 0
+--- !u!114 &-2329062088957414458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 4648, y: -152}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: -2329062088957414458}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: 1759997182008678465}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -2329062088957414458}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -7630307889139623699}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: c6a03ab7a88345a28a5c295eada6be73
+  input: 0
+  speakerName: ???
+  inlineText: We're going to have to seperate for now. I need you to find me again.
+  tags: []
+  speedMultiplier: 0.725
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
+--- !u!114 &-1681512877613300113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 1368, y: -360}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: -1681512877613300113}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: outputs 0
+        node: {fileID: -5275114284436437617}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: -1681512877613300113}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -8263578500462253704}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: c6a03ab7a88345a28a5c295eada6be73
+  input: 0
+  speakerName: ???
+  inlineText: I suppose it doesn't really matter anymore.
+  tags: []
+  speedMultiplier: 0.85
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
+--- !u!114 &-234938423433346777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d457e1760c0beb549a7420101c6fa197, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.ChoiceNode
+  graph: {fileID: 11400000}
+  position: {x: 392, y: -8}
+  ports:
+    keys:
+    - input
+    - fallback
+    - outputs 0
+    - outputs 1
+    values:
+    - _fieldName: input
+      _node: {fileID: -234938423433346777}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: -7970861258273103891}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: fallback
+      _node: {fileID: -234938423433346777}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 4086366479284407242}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outputs 0
+      _node: {fileID: -234938423433346777}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 4086366479284407242}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: outputs 1
+      _node: {fileID: -234938423433346777}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 4086366479284407242}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+  nodeId: 37dc4e35f6d240ccba251bb4aec6455e
+  input: 0
+  lockedChoiceDisplay: 0
+  lockedSuffix: ' (Locked)'
+  options:
+  - InlineText: Who's there?
+    LocalizationKey: 
+    Tags: []
+    Conditions: []
+  - InlineText: Hello.
+    LocalizationKey: 
+    Tags: []
+    Conditions: []
+  fallback: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f90012bd11fdfd40be3de4be0762f2d, type: 3}
+  m_Name: LolaDialogue
+  m_EditorClassIdentifier: Assembly-CSharp::SnogDialogue.Runtime.DialogueGraph
+  nodes:
+  - {fileID: 8555235697981006176}
+  - {fileID: -7970861258273103891}
+  - {fileID: -234938423433346777}
+  - {fileID: 4086366479284407242}
+  - {fileID: -5275114284436437617}
+  - {fileID: -1681512877613300113}
+  - {fileID: -3934442057596469354}
+  - {fileID: -8263578500462253704}
+  - {fileID: -3198987252613333959}
+  - {fileID: 7445565547859717136}
+  - {fileID: -4029218276174928057}
+  - {fileID: -6077536407371840617}
+  - {fileID: 6988395264100543284}
+  - {fileID: 7644308207537355508}
+  - {fileID: 8187605616143210590}
+  - {fileID: -5292787717573830521}
+  - {fileID: 1759997182008678465}
+  - {fileID: -2329062088957414458}
+  - {fileID: -7630307889139623699}
+  - {fileID: 5023875919407581027}
+  - {fileID: -5551094817638925887}
+  - {fileID: -3777303317306532074}
+  graphId: c5fc30afa43f4ea88fb89def65c717f1
+--- !u!114 &1759997182008678465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 4296, y: -152}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: 1759997182008678465}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: -5292787717573830521}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: 1759997182008678465}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -2329062088957414458}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: c6a03ab7a88345a28a5c295eada6be73
+  input: 0
+  speakerName: ???
+  inlineText: Even if you don't know what's happening.
+  tags: []
+  speedMultiplier: 0.75
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
+--- !u!114 &4086366479284407242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 728, y: -88}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: 4086366479284407242}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: fallback
+        node: {fileID: -234938423433346777}
+        reroutePoints: []
+      - fieldName: outputs 1
+        node: {fileID: -234938423433346777}
+        reroutePoints: []
+      - fieldName: outputs 0
+        node: {fileID: -234938423433346777}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: 4086366479284407242}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -5275114284436437617}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: c6a03ab7a88345a28a5c295eada6be73
+  input: 0
+  speakerName: ???
+  inlineText: Are you there, detective?
+  tags: []
+  speedMultiplier: 0.7
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
+--- !u!114 &5023875919407581027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 5272, y: -184}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: 5023875919407581027}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: outputs 1
+        node: {fileID: -7630307889139623699}
+        reroutePoints: []
+      - fieldName: outputs 0
+        node: {fileID: -7630307889139623699}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: 5023875919407581027}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -5551094817638925887}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: c6a03ab7a88345a28a5c295eada6be73
+  input: 0
+  speakerName: ???
+  inlineText: You'll know it's me. It'll happen again.
+  tags: []
+  speedMultiplier: 1
+  eventKey: next_Chapter1
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
+--- !u!114 &6988395264100543284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 3304, y: 152}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: 6988395264100543284}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: outputs 1
+        node: {fileID: -6077536407371840617}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: 6988395264100543284}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 8187605616143210590}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: c6a03ab7a88345a28a5c295eada6be73
+  input: 0
+  speakerName: ???
+  inlineText: No. Well, I suppose. That's not quite what I meant. I meant where we
+    are now, this place.
+  tags: []
+  speedMultiplier: 0.85
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
+--- !u!114 &7445565547859717136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 2360, y: -152}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: 7445565547859717136}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: outputs 0
+        node: {fileID: -3198987252613333959}
+        reroutePoints: []
+      - fieldName: outputs 1
+        node: {fileID: -3198987252613333959}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: 7445565547859717136}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -4029218276174928057}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: c6a03ab7a88345a28a5c295eada6be73
+  input: 0
+  speakerName: ???
+  inlineText: I don't think you can. It's really that frightening.
+  tags: []
+  speedMultiplier: 0.85
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
+--- !u!114 &7644308207537355508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc8707fcce6dfe488bd412c8f607895, type: 3}
+  m_Name: Line
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.LineNode
+  graph: {fileID: 11400000}
+  position: {x: 3320, y: -424}
+  ports:
+    keys:
+    - input
+    - next
+    values:
+    - _fieldName: input
+      _node: {fileID: 7644308207537355508}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: outputs 0
+        node: {fileID: -6077536407371840617}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: next
+      _node: {fileID: 7644308207537355508}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: 8187605616143210590}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: c6a03ab7a88345a28a5c295eada6be73
+  input: 0
+  speakerName: ???
+  inlineText: That isn't really what I meant. I meant where we are now, this place.
+  tags: []
+  speedMultiplier: 0.85
+  eventKey: 
+  startEventDelay: 0
+  autoAdvance: 0
+  autoAdvanceDelay: 1.5
+  next: 0
+--- !u!114 &8187605616143210590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d457e1760c0beb549a7420101c6fa197, type: 3}
+  m_Name: Choice
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.ChoiceNode
+  graph: {fileID: 11400000}
+  position: {x: 3656, y: -8}
+  ports:
+    keys:
+    - input
+    - fallback
+    - outputs 0
+    - outputs 1
+    - outputs 2
+    - outputs 3
+    - outputs 4
+    - outputs 5
+    - outputs 6
+    - outputs 7
+    - outputs 8
+    values:
+    - _fieldName: input
+      _node: {fileID: 8187605616143210590}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: next
+        node: {fileID: 7644308207537355508}
+        reroutePoints: []
+      - fieldName: next
+        node: {fileID: 6988395264100543284}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: fallback
+      _node: {fileID: 8187605616143210590}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: outputs 0
+      _node: {fileID: 8187605616143210590}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -5292787717573830521}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: outputs 1
+      _node: {fileID: 8187605616143210590}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -5292787717573830521}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: outputs 2
+      _node: {fileID: 8187605616143210590}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -5292787717573830521}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: outputs 3
+      _node: {fileID: 8187605616143210590}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -5292787717573830521}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: outputs 4
+      _node: {fileID: 8187605616143210590}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -5292787717573830521}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: outputs 5
+      _node: {fileID: 8187605616143210590}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -5292787717573830521}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: outputs 6
+      _node: {fileID: 8187605616143210590}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -5292787717573830521}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: outputs 7
+      _node: {fileID: 8187605616143210590}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -5292787717573830521}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: outputs 8
+      _node: {fileID: 8187605616143210590}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -5292787717573830521}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 1
+  nodeId: 37dc4e35f6d240ccba251bb4aec6455e
+  input: 0
+  lockedChoiceDisplay: 0
+  lockedSuffix: ' (Locked)'
+  options:
+  - InlineText: I suppose this is a dream.
+    LocalizationKey: 
+    Tags: []
+    Conditions: []
+  - InlineText: I suppose this is the end.
+    LocalizationKey: 
+    Tags: []
+    Conditions: []
+  - InlineText: I suppose this is the beginning.
+    LocalizationKey: 
+    Tags: []
+    Conditions: []
+  - InlineText: I suppose this is it.
+    LocalizationKey: 
+    Tags: []
+    Conditions: []
+  - InlineText: I suppose this is a nightmare.
+    LocalizationKey: 
+    Tags: []
+    Conditions: []
+  - InlineText: I suppose this is death.
+    LocalizationKey: 
+    Tags: []
+    Conditions: []
+  - InlineText: I suppose this isn't anything at all.
+    LocalizationKey: 
+    Tags: []
+    Conditions: []
+  - InlineText: I suppose this is a room with a checkered floor.
+    LocalizationKey: 
+    Tags: []
+    Conditions: []
+  - InlineText: I suppose this is the train.
+    LocalizationKey: 
+    Tags: []
+    Conditions: []
+  fallback: 0
+--- !u!114 &8555235697981006176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4587b57bac21cf64cbaf064f50c39d91, type: 3}
+  m_Name: Start
+  m_EditorClassIdentifier: SnogDialogueRuntime::SnogDialogue.Runtime.StartNode
+  graph: {fileID: 11400000}
+  position: {x: -136, y: -200}
+  ports:
+    keys:
+    - next
+    values:
+    - _fieldName: next
+      _node: {fileID: 8555235697981006176}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: input
+        node: {fileID: -7970861258273103891}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeId: c0f669e46adc4c05a7e3a708164be666
+  next: 0

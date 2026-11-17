@@ -1163,7 +1163,7 @@ MonoBehaviour:
   lockedChoiceDisplay: 0
   lockedSuffix: ' (Locked)'
   options:
-  - InlineText: Seems a little insensative.
+  - InlineText: Seems a little insensitive.
     LocalizationKey: 
     Tags: []
     Conditions: []
